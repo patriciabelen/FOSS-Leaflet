@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Galleries NYC - Leaflet</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://cdn.maptiler.com/maptiler-sdk-js/v1.1.1/maptiler-sdk.umd.js"></script>
+    <link href="https://cdn.maptiler.com/maptiler-sdk-js/v1.1.1/maptiler-sdk.css" rel="stylesheet" />
+    <script src="https://cdn.maptiler.com/leaflet-maptilersdk/v1.0.0/leaflet-maptilersdk.js"></script>
+    <!-- Leaflet.MarkerCluster -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.js'></script>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css' rel='stylesheet' />
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css' rel='stylesheet' />
+ 
+</head>
+
+<body>
+<div id="container">
+    <div id="info">
+        <h1>Museums and Galleries in New York City</h1>
+        <h2>Map created to visualize the concentration of museums and galleries in the neighborhoods of New York City. The neighborhoods of the Upper East Side, Chelsea and Soho have the most number of orgranizations. However, the dataset does not provide information on how the classifications are determined: how does an organization receive the label of <i>museum</i> or <i>gallery</i> and what are the differences between those labels? Noticeably absent are major museums such as The Met and MoMA.</h2>
+        <h2>Click on a gray area to reveal neighborhood. Click on a marker to reveal the name of the organization. </h2>
+        <h2>Source: <a href="https://data.cityofnewyork.us/Recreation/New-York-City-Museums/ekax-ky3z" target="_blank">Museums and Galleries</a><br>
+            Source: <a href="https://data.beta.nyc/dataset/pediacities-nyc-neighborhoods/resource/35dd04fb-81b3-479b-a074-a27a37888ce7" target="_blank">NYC Neighborhoods</a></h2>
+    </div>
+    <!-- Set up the leaflet library and div -->
+    <div id="map"></div>
+</div>
+</body>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script src="script.js"></script>
+
+</html>
