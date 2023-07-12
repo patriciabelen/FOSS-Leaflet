@@ -31,7 +31,7 @@ const mtLayer = L.maptilerLayer({
 
 //Add galleries
 //Set Z Index
-const galleries = axios('https://patriciabelen.github.io/data/galleries.geojson').then(resp => {
+const galleries = axios('galleries.geojson').then(resp => {
     var geojsonMarkerOptions = {
         radius: 2,
         fillColor: "#ff0000",
@@ -57,7 +57,7 @@ const galleries = axios('https://patriciabelen.github.io/data/galleries.geojson'
 });
 
 //Neighborhoods area
-const hoods = axios('https://patriciabelen.github.io/data/neighborhoods.json').then(resp => {
+const hoods = axios('neighborhoods.json').then(resp => {
 
     L.geoJSON(resp.data, {
 
